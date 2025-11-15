@@ -10,3 +10,4 @@ Build notes:
 - Open with Android Studio (app folder)
 - Ensure Android NDK, CMake and OpenCV Android SDK or AAR are available
 - Place OpenCV SDK under `opencv/` or copy `.so` to `app/src/main/jniLibs/`
+# Real-Time-Edge-Detection-Viewer
