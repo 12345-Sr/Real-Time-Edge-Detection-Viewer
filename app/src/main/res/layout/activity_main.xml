@@ -1,0 +1,31 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Hidden TextureView used only to provide a Surface to Camera2 preview if needed -->
+    <TextureView
+        android:id="@+id/previewTexture"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+
+    <!-- GLSurfaceView for rendering processed frames -->
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Simple overlay for FPS / toggle -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#66000000">
+        <TextView android:id="@+id/fpsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FPS: --"/>
+        <Button android:id="@+id/toggleBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Toggle Edge"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+
+{
+  "name": "edge-viewer",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc --outDir dist && cp src/index.html dist/index.html"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}
